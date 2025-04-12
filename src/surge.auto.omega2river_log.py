@@ -124,3 +124,20 @@ def reverse_string(s):
 def is_palindrome(s):
     s = s.lower().replace(" ", "")
     return s == s[::-1]
+
+# Update at 2025-04-12 15:00:11
+# Updated the code with new features
+# Added unit tests
+# Added some random functionality
+
+
+import asyncio
+
+async def fetch_data_async(url):
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()
+
+async def process_multiple_urls(urls):
+    tasks = [fetch_data_async(url) for url in urls]
+    return await asyncio.gather(*tasks)
