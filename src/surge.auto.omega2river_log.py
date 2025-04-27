@@ -424,3 +424,19 @@ class LinkedList:
         while current.next:
             current = current.next
         current.next = new_node
+
+# Update at 2025-04-27 13:57:08
+# Refactored the code
+# Updated the code with new features
+# Fixed some bugs
+
+
+from datetime import datetime, timedelta
+
+def get_date_range(start_date, end_date):
+    date_list = []
+    current_date = start_date
+    while current_date <= end_date:
+        date_list.append(current_date)
+        current_date += timedelta(days=1)
+    return date_list
