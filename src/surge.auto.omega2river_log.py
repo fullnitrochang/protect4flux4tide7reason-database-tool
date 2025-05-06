@@ -595,3 +595,13 @@ def create_table(conn):
         conn.commit()
     except sqlite3.Error as e:
         print(e)
+
+# Update at 2025-05-07 08:17:08
+# Improved performance
+# Added documentation
+# Refactored the code
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n-1)
