@@ -659,3 +659,13 @@ class Observer:
     def notify(self):
         for observer in self._observers:
             observer.update()
+
+# Update at 2025-05-11 03:14:56
+# Fixed some bugs
+
+def reverse_string(s):
+    return s[::-1]
+
+def is_palindrome(s):
+    s = s.lower().replace(" ", "")
+    return s == s[::-1]
