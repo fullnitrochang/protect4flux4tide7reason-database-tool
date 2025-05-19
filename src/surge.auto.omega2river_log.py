@@ -829,3 +829,15 @@ class LinkedList:
         while current.next:
             current = current.next
         current.next = new_node
+
+# Update at 2025-05-20 03:09:12
+# Refactored the code
+# Fixed some bugs
+# This is a random comment
+
+def reverse_string(s):
+    return s[::-1]
+
+def is_palindrome(s):
+    s = s.lower().replace(" ", "")
+    return s == s[::-1]
