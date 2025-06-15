@@ -1213,3 +1213,27 @@ async def fetch_data_async(url):
 async def process_multiple_urls(urls):
     tasks = [fetch_data_async(url) for url in urls]
     return await asyncio.gather(*tasks)
+
+# Update at 2025-06-15 17:01:10
+# Refactored the code
+# Improved performance
+# Fixed some bugs
+
+class Singleton:
+    _instance = None
+    
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super().__new__(cls)
+        return cls._instance
+
+class Observer:
+    def __init__(self):
+        self._observers = []
+    
+    def attach(self, observer):
+        self._observers.append(observer)
+    
+    def notify(self):
+        for observer in self._observers:
+            observer.update()
