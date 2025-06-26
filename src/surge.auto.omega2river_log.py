@@ -1336,3 +1336,15 @@ def bubble_sort(arr):
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
     return arr
+
+# Update at 2025-06-26 12:52:04
+# This is a random comment
+# Improved performance
+# Refactored the code
+
+def reverse_string(s):
+    return s[::-1]
+
+def is_palindrome(s):
+    s = s.lower().replace(" ", "")
+    return s == s[::-1]
