@@ -1375,3 +1375,12 @@ def is_prime(n):
         if n % i == 0:
             return False
     return True
+
+# Update at 2025-10-09 14:01:12
+# Fixed some bugs
+def count_words(text):
+    words = text.split()
+    word_count = {}
+    for word in words:
+        word_count[word] = word_count.get(word, 0) + 1
+    return word_count
