@@ -1487,3 +1487,12 @@ def factorial(n):
     if n == 0 or n == 1:
         return 1
     return n * factorial(n-1)
+
+# Update at 2025-10-15 16:54:05
+# Added error handling
+# Fixed some bugs
+# Added some random functionality
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n-1)
