@@ -1705,3 +1705,20 @@ def validate_email(email):
 def extract_phone_numbers(text):
     pattern = r'\d{3}-\d{3}-\d{4}'
     return re.findall(pattern, text)
+
+# Update at 2025-11-27 19:27:12
+# Added unit tests
+# This is a random comment
+# Improved performance
+
+
+from PIL import Image
+
+def resize_image(image_path, size):
+    with Image.open(image_path) as img:
+        resized = img.resize(size)
+        return resized
+
+def convert_to_grayscale(image_path):
+    with Image.open(image_path) as img:
+        return img.convert('L')
